@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+
+
+.container {
+    width: 1440px;
+    position: relative;
+    display: block;
+    overflow-x: none;
+}
+
+
+
+.container #bottom_curve {
+    position: absolute;
+    top: 765px;
+    left: 0;    
+}
+
+.container #pattern {
+    position: absolute;
+    top: 70px;
+    right: 70px;
+}
+
+.slider {
+    position: relative;
+    width: 1440px;
+    overflow-x: visible;
+}
+
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide #slide_image {
+    position: absolute;
+    top: 135px;
+    right: 160px;
+}
+
+.slide .textarea {
+    width: 600px;
+    height: auto;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    z-index: 1;
+}
+
+.slide .textarea #quote {
+    position: relative;
+    top: 35px;
+    left: 90px;
+}
+
+.slide .textarea p {
+    font-size: 32px;
+    color: hsl(240, 38%, 20%);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.slide cite {
+    font-size: 30px;
+    text-decoration: none;
+    color: hsl(240, 38%, 20%);
+}
+
+.slide cite em {
+    color:hsl(240, 18%, 77%);
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
+.buttons {
+    position: absolute;
+    top: 650px;
+    right:500px;
+    display: flex;
+    background-color: white;
+    width: 130px;
+    height: 60px;
+    border-radius: 50px;
+    box-shadow: 0px 5px 5px 5px hsl(240, 18%, 77%);
+    padding: 10px;
+}
+
+.buttons .next {
+    color: hsl(240, 38%, 20%);
+    margin-top: 15px;
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+.buttons .prev {
+    color: hsl(240, 38%, 20%);
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+
+
+@media (max-width:375px) {
+    .container {
+        max-width: 375px;
+    }
+
+    .container #bottom_curve {
+        position: absolute;
+        bottom: 0px;
+        left: 0; 
+        width: 375px;
+        height: 170px;  
+    }
+
+    .container #pattern {
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        width: 325px;
+    }
+
+    .slider {
+        position: relative;
+        width: 375px;
+    }
+
+    .slide #slide_image {
+        position: absolute;
+        top: 80px;
+        right: 60px;
+        width: 250px;
+        
+    }
+    
+    .slide .textarea {
+        width: 300px;
+        height: auto;
+        position: absolute;
+        top: 400px;
+        left: 35px;
+        z-index: 1;
+        text-align: center;
+    }
+
+    .slide .textarea #quote {
+        position: relative;
+        top: 30px;
+        left: 0px;
+        width: 70px;
+    }
+    
+    
+    .slide .textarea p {
+       font-size: 20px;
+       color: hsl(240, 38%, 20%);
+       text-align: center;
+       margin-bottom: 20px;
+    }
+
+    .slide cite {
+        font-size: 20px;
+        text-decoration: none;
+        color: hsl(240, 38%, 20%);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slide cite em {
+        color:hsl(240, 18%, 77%);
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    .buttons {
+        position: absolute;
+        top: 310px;
+        right:140px;
+        width: 80px;
+        height: 35px;
+    }
+
+    .buttons .next {
+        margin-top: 0px;
+        margin-left: 35px;
+    }
+    
+    .buttons .prev {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}
