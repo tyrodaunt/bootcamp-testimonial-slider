@@ -113,6 +113,7 @@
 @media (max-width:375px) {
     .container {
         max-width: 375px;
+        Overflow-y:hidden;
     }
 
     .container #bottom_curve {
